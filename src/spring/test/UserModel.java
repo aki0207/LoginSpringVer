@@ -1,23 +1,24 @@
 package spring.test;
 
 public class UserModel {
-	String id;
-	String name;
+	String user_id;
+	String user_name;
+	
 
 	public String getId() {
-		return id;
+		return user_id;
 	}
 
 	public void setId(String id) {
-		this.id = id;
+		this.user_id = id;
 	}
 
 	public String getName() {
-		return name;
+		return user_name;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.user_name = name;
 	}
 }
 

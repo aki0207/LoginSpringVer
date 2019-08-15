@@ -11,7 +11,6 @@
 	<form:form action="${url}" method="POST" modelAttribute="UM">
 
 		ID：<form:input path="id" />
-		<form:input path="name" disabled="true" />
 		<BR />
 		<input type="submit" value="ログイン" />
 		<BR />
@@ -19,3 +18,4 @@
 	${msg}
 </body>
 </html>
+			
