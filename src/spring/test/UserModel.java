@@ -1,24 +1,36 @@
 package spring.test;
 
 public class UserModel {
-	String user_id;
-	String user_name;
+	String id;
+	String name;
+	String password;
+	String eMail;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String geteMail() {
+		return eMail;
+	}
+	public void seteMail(String e_mail) {
+		this.eMail = e_mail;
+	}
 	
 
-	public String getId() {
-		return user_id;
-	}
-
-	public void setId(String id) {
-		this.user_id = id;
-	}
-
-	public String getName() {
-		return user_name;
-	}
-
-	public void setName(String name) {
-		this.user_name = name;
-	}
+	
 }
 

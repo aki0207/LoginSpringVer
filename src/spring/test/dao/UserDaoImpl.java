@@ -19,8 +19,8 @@ public class UserDaoImpl implements UserDao {
 	private JdbcTemplate jdbcTemplate;
 
 	@Override
-	public List<UserModel> getUser(String id) {
-		List<UserModel> list = jdbcTemplate.query("select * from t_user where user_id= ?", new Object[] { id },
+	public List<UserModel> getUser(String eMail, String password) {
+		List<UserModel> list = jdbcTemplate.query("select * from t_user where user_email= ? and user_password = ?", new Object[] { eMail,password },
 				new RowMapper<UserModel>() {
 					public UserModel mapRow(ResultSet rs, int rowNum) throws SQLException {
 						UserModel user = new UserModel();

@@ -10,12 +10,14 @@
 	<spring:url value="/login" var="url" htmlEscape="true" />
 	<form:form action="${url}" method="POST" modelAttribute="UM">
 
-		ID：<form:input path="id" />
+		メールアドレス：<form:input path="eMail" />
 		<BR />
+		パスワード：<form:input path="password" />
 		<input type="submit" value="ログイン" />
 		<BR />
 	</form:form>
 	${msg}
+
 </body>
 </html>
 			

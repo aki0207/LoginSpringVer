@@ -17,7 +17,7 @@ public class LoginServiceImpl implements LoginService {
 
 	@Override
 	public boolean checkLogin(UserModel lm) {
-		List<UserModel> list = userDao.getUser(lm.getId());
+		List<UserModel> list = userDao.getUser(lm.geteMail(),lm.getPassword());
 		return list.size() > 0;
 	}
 }
